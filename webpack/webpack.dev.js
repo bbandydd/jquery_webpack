@@ -16,7 +16,7 @@ class WebpackDevConfig {
             },
             module: {
                 rules: [
-                    jsRules(false),
+                    jsRules(true),
                     cssRules,
                     scssRules,
                     imageRules,
@@ -30,7 +30,11 @@ class WebpackDevConfig {
             ],
             devServer: {
                 hot: true,
-                inline: true
+                inline: true,
+                overlay: {
+                    errors: true,
+                    warnings: false,
+                },
             }
         }
     }
