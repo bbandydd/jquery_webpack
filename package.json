@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/bbandydd/jquery_webpack#readme",
   "dependencies": {
+    "jquery": "^3.3.1",
     "webpack": "^2.6.1"
   },
   "devDependencies": {

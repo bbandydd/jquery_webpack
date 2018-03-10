@@ -1,6 +1,12 @@
 {
     "extends": "airbnb",
     "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jquery": true
+    },
     "rules": {
         "linebreak-style": 0,
         "no-debugger": 0,

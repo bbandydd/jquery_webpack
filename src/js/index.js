@@ -1,3 +1,3 @@
 import '../css/main.scss';
 
-console.log('this is console');
+jQuery('#app').append('<div>This is Jquery Webpack</div>');

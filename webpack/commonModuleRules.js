@@ -40,7 +40,7 @@ const scssRules = {
         {
             loader: 'css-loader',
             options: {
-                modules: true,
+                // modules: true,
                 importLoaders: 1,
                 sourceMap: true
             }
