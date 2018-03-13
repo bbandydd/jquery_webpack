@@ -79,6 +79,15 @@ const svgIconRules = {
     ]
 }
 
+const htmlRules = {
+    test: /\.html$/,
+    use: [
+        {
+            loader: 'raw-loader'
+        }
+    ]
+}
+
 module.exports = {
-    jsRules, cssRules, scssRules, imageRules, svgIconRules,
+    jsRules, cssRules, scssRules, imageRules, svgIconRules, htmlRules,
 };

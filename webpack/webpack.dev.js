@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const { jsRules, cssRules, scssRules, imageRules, svgIconRules } = require('./commonModuleRules');
+const { jsRules, cssRules, scssRules, imageRules, svgIconRules, htmlRules } = require('./commonModuleRules');
 
 class WebpackDevConfig {
     constructor() {
@@ -20,7 +20,8 @@ class WebpackDevConfig {
                     cssRules,
                     scssRules,
                     imageRules,
-                    svgIconRules
+                    svgIconRules,
+                    htmlRules
                 ]
             },
             plugins: [
