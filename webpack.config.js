@@ -1,7 +1,7 @@
 const webpackConfigs = require('./webpack');
 
 module.exports = (configName = 'development') => {
-    const loadedInstance = new webpackConfigs[configName]();
+  const loadedInstance = new webpackConfigs[configName]();
 
-    return loadedInstance.config;
-}
+  return loadedInstance.config;
+};
