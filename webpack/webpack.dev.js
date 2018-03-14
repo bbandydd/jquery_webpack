@@ -11,7 +11,7 @@ class WebpackDevConfig {
     this.config = {
       devtool: 'cheap-module-eval-source-map',
       entry: {
-        bundle: ['./src/js/index.js'],
+        bundle: ['./src/js/main.js'],
       },
       output: {
         path: path.resolve(__dirname, '../dist'),
