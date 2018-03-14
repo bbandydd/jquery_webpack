@@ -1,9 +1,12 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import '../index.html';
 import '../css/main.scss';
 
 import Button from './Button';
 
+// hot reload for development
+if (process.env.NODE_ENV !== 'production') {
+  require('../index.html');
+}
 
 $().ready(() => {
   const $button1 = new Button();
