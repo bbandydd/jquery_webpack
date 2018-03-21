@@ -1,11 +1,11 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import '../css/main.scss';
+import './css/main.scss';
 
-import Button from './Button';
+import Button from './js/Button';
 
 // hot reload for development
-if (process.env.NODE_ENV !== 'production') {
-  require('../index.html');
+if (ENV !== 'production') {
+  require('./index.html');
 }
 
 $().ready(() => {
