@@ -45,6 +45,11 @@ module.exports = (env, options) => ({
       errors: true
     }
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
@@ -53,6 +58,7 @@ module.exports = (env, options) => ({
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
+      Mustache: 'mustache'
     }),
     new webpack.DefinePlugin({
       ENV: JSON.stringify(options.mode)
