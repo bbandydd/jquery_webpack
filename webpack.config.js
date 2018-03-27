@@ -43,7 +43,8 @@ module.exports = (env, options) => ({
     overlay: {
       warnings: true,
       errors: true
-    }
+    },
+    compress: true
   },
   optimization: {
     splitChunks: {
